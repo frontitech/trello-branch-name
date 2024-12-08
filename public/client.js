@@ -47,9 +47,18 @@ function getLabelPrefix(labels) {
   return "";
 }
 
+function generateSlug(name) {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim();
+}
+
 function formatText(boardAbbreviation, card) {
   const cardShortUrl = card.idShort;
-  const cardSlug = card.name.toLowerCase().replace(/ /g, "-");
+  const cardSlug = generateSlug(card.name);
   const labelPrefix = getLabelPrefix(card.labels);
   return `${labelPrefix}${boardAbbreviation}-${cardShortUrl}-${cardSlug}`;
 }
