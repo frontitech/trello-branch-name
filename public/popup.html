@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://p.trellocdn.com/power-up.min.css" />
+    <style>
+      input {
+        width: 100%;
+      }
+    </style>
+    <script src="https://p.trellocdn.com/power-up.min.js"></script>
+  </head>
+  <body>
+    <input id="branch-name" value="" />
+  </body>
+  <script>
+    var t = TrelloPowerUp.iframe();
+    document.getElementById("branch-name").value = t.arg("branchName");
+  </script>
+</html>
