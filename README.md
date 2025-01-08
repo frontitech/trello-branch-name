@@ -127,6 +127,10 @@ project/
 - **Card Labels:** Backend
 - **Generated Text:** `EB-67-refactor-api`
 
+
+![trello-branch-name](https://github.com/user-attachments/assets/4d7ee95e-2d3b-4c06-9997-b080781dd248)
+
+
 ---
 
 ## License
